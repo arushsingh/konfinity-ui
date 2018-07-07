@@ -1,0 +1,32 @@
+body{
+  background-color: #181818;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.card{
+  background: var(--color-primary);
+font-family: var(--primary-font-family);
+border: 1px solid;
+padding:.75rem .75rem;
+-webkit-box-shadow: 2px 3px 5px -0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 5px -0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px -0px rgba(0,0,0,0.75);
+transition: box-shadow 200ms ease-in-out;
+border-color: rgba(0,0,0,0.14);
+border-bottom-left-radius: 2px;
+border-bottom-right-radius: 2px;
+z-index: 100;
+}
+.card-non-padding{
+  background: var(--color-primary);
+font-family: var(--primary-font-family);
+-webkit-box-shadow: 2px 3px 5px -0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 5px -0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px -0px rgba(0,0,0,0.75);
+transition: box-shadow 200ms ease-in-out;
+border-color: rgba(0,0,0,0.14);
+border-bottom-left-radius: 2px;
+border-bottom-right-radius: 2px;
+z-index: 100;
+}
