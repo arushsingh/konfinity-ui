@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import './slider.css';
 
-class Slider extends Component {
+class Slider extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: [
+            flikr: [
                 {
                     id: 0,
                     img: "http://www.keenthemes.com/preview/conquer/assets/plugins/jcrop/demos/demo_files/image1.jpg",
@@ -39,13 +39,13 @@ class Slider extends Component {
                 },
                 {
                     id: 5,
-                    img: "http://www.keenthemes.com/preview/conquer/assets/plugins/jcrop/demos/demo_files/image6.jpg",
+                    img: "https://www.hdwallpapers.in/thumbs/2018/2018_ford_eagle_squadron_mustang_gt_4k-t2.jpg",
                     header: 'star lord6',
                     data: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu liber Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu libero sit amet quam egestas semper.Aenean ultricies mi vitae est.Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu libero sit amet quam egestas semper.Aenean ultricies mi vitae est.Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu liber',
                 },
                 {
                     id: 6,
-                    img: "http://www.keenthemes.com/preview/conquer/assets/plugins/jcrop/demos/demo_files/image7.jpg",
+                    img: "https://www.hdwallpapers.in/thumbs/2018/2018_ford_eagle_squadron_mustang_gt_4k-t2.jpg",
                     header: 'star lord7',
                     data: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu liber Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu libero sit amet quam egestas semper.Aenean ultricies mi vitae est.Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu libero sit amet quam egestas semper.Aenean ultricies mi vitae est.Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu liber',
                 },
@@ -56,14 +56,13 @@ class Slider extends Component {
                     data: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu liber Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu libero sit amet quam egestas semper.Aenean ultricies mi vitae est.Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu libero sit amet quam egestas semper.Aenean ultricies mi vitae est.Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.Donec eu liber',
                 }
             ],
-            clone: [
-                {
-                    id: '',
-                    img: '',
-                    header: '',
-                    data: ''
-                }
-            ],
+            clone: [{
+                id: '',
+                img: '',
+                header: '',
+                data: ''
+            }],
+
             activeIndex: 0,
             click: 0,
             condition: false,
@@ -71,16 +70,30 @@ class Slider extends Component {
             disClick: 0
         };
     }
-
-    onRight = (event) => {
-        for (let i = 0; i < this.state.data.length; i++) {
-            const clone = this.state.clone[i];
-            this.setState({ clone });
-        }
+    componentDidMount = () => {
+        const dataArray = Object.assign([], this.state.flikr);
+        dataArray.id = 0;
+        dataArray.img = this.state.flikr[0].img;
+        dataArray.header = this.state.flikr[0].header;
+        dataArray.data = this.state.flikr[0].data;
+        this.setState({ clone: dataArray });
+    }
+    onRight = (e) => {
+        e.preventDefault();
+        let slide = this.state.activeIndex + 1 < this.state.flikr.length ? this.state.activeIndex + 1 : 0;
+        this.setState({ activeIndex: slide });
+        console.log(slide);
+        const clone = this.state.flikr[slide];
+        this.setState({ clone });
     }
 
-    onLeft = (event) => {
-
+    onLeft = (e) => {
+        e.preventDefault();
+        let slide = this.state.activeIndex - 1 < 0 ? this.state.flikr.length - 1 : this.state.activeIndex - 1;
+        this.setState({ activeIndex: slide })
+        console.log(slide);
+        const clone = this.state.flikr[slide]
+        this.setState({ clone })
     }
     likeCounter = () => {
         this.setState((prevState) => ({
@@ -99,34 +112,13 @@ class Slider extends Component {
             condition1: !this.state.condition1
         });
     }
-
-    componentDidMount = () => {
-        const newClone = Object.assign({}, this.state.data)
-        newClone.id = 0;
-        newClone.img = this.state.data[0].img;
-        newClone.data = this.state.data[0].data;
-        newClone.header = this.state.data[0].header;
-        this.setState({ clone: newClone });
-        if (this.state.click > 0) {
-            this.setState({})
-        }
-
-
-    }
-
-
-
     render() {
         return (
             <div className="App">
-                <div className="slider-container" data-id={this.state.clone.id}>
+                <div className="slider-container">
                     <div className="image-placeholder">
-                        <div className="image-placeholder0">
-                            <div className="overlay-image-holder">  <img src={this.state.clone.img} alt="box" /></div>
-                        </div>
-                        <div className="image-box"><img src={this.state.clone.img} alt="box" /></div>
                         <div className="image-placeholder1">
-                            <div className="overlay-image-holder">  <img src={this.state.clone.img} alt="box" /></div>
+                            <div className="overlay-image-holder"><img src={this.state.clone.img} alt="" key={this.state.clone.id} /></div>
                         </div>
                     </div>
                     <div className="data-container">
