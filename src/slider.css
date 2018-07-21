@@ -12,6 +12,7 @@ html, body {
   position: relative;
 }
 img{
+max-height: 20rem;
   width: 100%;
 }
 ul {
